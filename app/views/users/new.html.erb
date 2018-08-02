@@ -1,0 +1,9 @@
+<h1>Inscris-toi!</h1>
+<%= form_for @user, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <p><%= f.text_field :name, placeholder:"name" %></p>
+  <p><%= f.text_field :email, placeholder:"email" %></p>
+  <p><%= f.text_field :password, placeholder:"password" %></p>
+  <p><%= f.text_field :password_confirmation, placeholder:"password confirmation" %></p>
+  <p class="btn btn-dark"><%= f.submit "submit" %></p>
+<% end %>
+
